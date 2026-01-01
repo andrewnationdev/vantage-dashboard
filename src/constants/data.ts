@@ -7,7 +7,7 @@ export const FINANCIAL_DATA: IFinancialData[] = [
   { month: 'Mar', income: 4800, expense: 4100 },
   { month: 'Abr', income: 6100, expense: 2900 },
   { month: 'Mai', income: 5900, expense: 4800 },
-  { month: 'Jun', income: 7200, expense: 3500 }, // Mês de bônus ou freela grande
+  { month: 'Jun', income: 7200, expense: 3500 },
 ];
 
 export const SUMMARY_CARDS: ISummaryCard[] = [
