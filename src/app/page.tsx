@@ -57,7 +57,7 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        <footer className="flex justify-center">
+        <footer className="flex justify-center text-center">
           <p className="text-slate-100">© {year} - Todos os Direitos Reservados. Desenvolvido por 
             <a href="https://andrewnationdev.vercel.app/" className="text-sky-300 hover:text-sky-100 ml-2">AndrewNation</a>
           </p>
