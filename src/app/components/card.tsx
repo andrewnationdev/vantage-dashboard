@@ -1,5 +1,4 @@
 "use client"
-import { useEffect, useState } from "react";
 import { IStatsCardComponent } from "../types/types";
 import { BanknoteArrowDown, DollarSign, ArrowUp } from "lucide-react"
 
@@ -15,7 +14,7 @@ export default function StatsCardComponent(props: IStatsCardComponent) {
         else return "bg-slate-700"
     }
 
-    return <div className={`${getCardBackground()} p-6 text-slate-100 rounded-xl border border-slate-500 shadow-sm flex flex-col gap-2 hover:shadow-lg transition-shadow`}>
+    return <div className={`${getCardBackground()} p-6 text-slate-100 rounded-xl border border-slate-500 shadow-sm flex flex-col gap-2 hover:scale-105 transition duration-150 ease-in-out`}>
         <div className="flex gap-4 justify-between">
             <span className="font-bold">{props.title}</span>
             {props.title.includes("saldo") || props.title.includes("Saldo")
