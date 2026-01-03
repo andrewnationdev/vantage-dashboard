@@ -1,5 +1,5 @@
 import { CartesianGrid, XAxis, YAxis, Line, LineChart } from "recharts";
-import { IChartComponent, IFinancialData, TDataApi } from "../types/types";
+import { IChartComponent } from "../types/types";
 
 export default function ChartComponent(props: IChartComponent) {
     return <section className="bg-slate-700 p-6 rounded-xl shadow-sm border border-slate-500">
