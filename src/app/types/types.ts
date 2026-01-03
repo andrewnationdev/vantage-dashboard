@@ -12,3 +12,20 @@ export interface ISummaryCard {
   type: 'income' | 'expense' | 'balance';
   description: string;
 }
+
+export type TDataApi = {
+  chartData: IFinancialData[] | [],
+  summary: ISummaryCard[] | []
+}
+
+export interface IChartComponent {
+  data: IFinancialData[] | []
+}
+
+export interface ICardsRowComponent {
+  data: ISummaryCard[] | []
+}
+
+export interface IFooter {
+  year: string | number;
+}
