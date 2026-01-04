@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Overview
 
-## Getting Started
+The Vantage Dashboard is financial analytics platform template built with Next.js. By using Recharts for data visualization and Tailwind CSS for a refined dark-mode aesthetic, the application offers a clear overview of monthly income, expenses, and investment availability through a clean and responsive interface. You can easily customize it to tailor it to your needs, because the app is split into components you can reuse. It was built with a focus on precision, performance, and modern UI/UX principles.
 
-First, run the development server:
+# 🛠 Tech Stack
+
+- Framework: Next.js (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Data Visualization: Recharts
+- Architecture: Internal API Routes (Full-stack simulation)
+
+# ✨ Key Features
+
+- Full-Stack Architecture: Implements native Next.js API Routes to serve financial data asynchronously.
+- Analytical Visualization: Responsive line charts illustrating income vs. expense trends.
+- Modular Component Design: Clean separation of concerns with isolated components for cards, charts, and layout logic.
+- Refined UI/UX: Dark-mode optimized interface with smooth transitions and fade-in animations.
+- Mobile First.
+
+📐 Architectural Decisions
+
+- Data is fetched from an internal endpoint (/api/finance) instead of being hardcoded into the UI. If needed, you can easily expand that endpoint to add DB connection.
+- Type Safety: use of TypeScript interfaces to ensure data consistency across the entire application.
+- Optimization: Next.js metadata for improved SEO and branding (custom favicons and dynamic titles).
+
+# 🚦 Getting Started
+
+1-Extract the .zip file
+
+2-Install dependencies:
+Bash
+
+```bash
+npm install
+```
+
+3-Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4-Open the application: Navigate to http://localhost:3000 to view the dashboard.
