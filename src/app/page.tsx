@@ -41,7 +41,9 @@ export default function DashboardPage() {
   return (
     <main className="min-h-screen bg-gray-800 p-4 md:p-8">
       <div className={`transition-opacity duration-1200 ${!loading ? 'opacity-100' : 'opacity-0'} max-w-7xl mx-auto space-y-8`}>
-        <AppHeader />
+        <AppHeader actionOnHamburguerMenuClick={()=>{
+          window.alert("Adicione uma ação ao clicar no menu")
+        }} appTitle={"Vantage"} />
         {!loading && !failedFetching && <FinancialCardsRowComponent data={data?.summary} />}
         {!loading && !failedFetching && <ChartComponent data={data?.chartData} />}
         {loading && <section className="bg-slate-700 p-6 rounded-xl shadow-sm border border-slate-500">

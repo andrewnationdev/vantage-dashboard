@@ -29,3 +29,8 @@ export interface ICardsRowComponent {
 export interface IFooter {
   year: string | number;
 }
+
+export interface IHeader {
+  actionOnHamburguerMenuClick: () => void;
+  appTitle: string;
+}
