@@ -5,7 +5,13 @@ export default function ChartComponent(props: IChartComponent) {
     return <section className="bg-slate-700 p-6 rounded-xl shadow-sm border border-slate-500">
         <h2 className="text-xl text-slate-100 font-semibold mb-6">Fluxo de Caixa</h2>
         <div className="w-full flex items-center justify-center text-white">
-            <LineChart style={{ width: '100%', aspectRatio: 1.618, maxWidth: 800, margin: 'auto' }} responsive data={props.data}>
+            <LineChart
+                role="img"
+                style={{ width: '100%', aspectRatio: 1.618, maxWidth: 800, margin: 'auto' }} 
+                responsive 
+                aria-label="Gráfico de linhas representando o fluxo de caixa mensal, com linhas para receitas e despesas."
+                data={props.data}
+            >
                 <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
                 <XAxis dataKey="month" tick={{fill:"white"}}/>
                 <YAxis width="auto" tick={{fill:"white"}}/>
